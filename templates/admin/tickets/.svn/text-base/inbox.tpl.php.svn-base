@@ -1,0 +1,44 @@
+<ul>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=index" style="color: #fff;">Inbox</a></li>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=outbox">Sent</a></li>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=compose">Compose new</a></li>		
+</ul>
+<br /><br />
+<table border="0" width="100%" class="grid" cellpadding="0" cellspacing="0">
+<tr>
+	<th align="left">Posted</th>
+	<th align="left">From</th>	
+	<th align="left">Subject</th>
+	<th align="left" style="width: 40%">Message</th>
+	<th colspan="2" align="left">Actions</th>	
+</tr>
+<?php if (($count = count($this->items))) { ?>
+<?php for ($i = 0, $count = count($this->items); $i < $count; $i++) {?>
+<tr>
+	<td valign="top"><?php echo $this->items[$i]['posted']; ?></td>	
+	<td valign="top"><?php echo $this->items[$i]['first_name']; ?>&nbsp;<?php echo $this->items[$i]['last_name']; ?></td>	
+	<td valign="top"><?php echo $this->items[$i]['subj']; ?></td>
+	<td align="justify"><?php echo nl2br($this->items[$i]['message']); ?></td>	
+	<td>
+		<a href="?cmd=doRemoveInbox&id=<?php echo $this->items[$i]['id']; ?>"
+		onclick="javascript: return confirm('Remove selected message?');">remove</a></td>	
+	<td>
+		<a href="?cmd=compose&id=<?php echo $this->items[$i]['id']; ?>">reply</a></td>		
+</tr>
+<tr><td colspan="6" style="border-bottom: 1px solid #1B1A13;"><br/></td></tr>
+<tr><td colspan="6"><br/></td></tr>
+<?php } //end for ?>
+<?php } else { ?>
+<tr><td colspan="6">There are no messages</td></tr>
+<?php } ?>
+</table>
+<br /><br />
+<?php $this->call('pager', 
+        $this->count, 
+		$this->onpage, 
+		$this->page,
+		$this->neighbours, '?cmd='.$this->_CMD);?>
+		

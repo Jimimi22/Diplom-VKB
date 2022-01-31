@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body>
+This message was sent from <?php echo $_SERVER['HTTP_HOST'];?><br />
+<p>
+User <?php echo $this->_USER['first_name']; ?> <?php echo $this->_USER['last_name']; ?> 
+sent you new message.
+</p>
+<p>
+<?php echo nl2br($this->message); ?>
+</p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+8
+
+dir
+28
+svn://192.168.0.64/usr/local/svn/repos/spfish/resources/scripts/fckeditor/editor/plugins/placeholder
+svn://192.168.0.64/usr/local/svn/repos/spfish
+
+
+
+2009-02-04T11:20:58.558254Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e2fd7e2b-b991-41b7-8b37-9387fa846916
+
+lang
+dir
+
+placeholder.gif
+file
+
+
+
+
+2009-02-27T13:21:51.813063Z
+090274dbcc2f5a50ea1086d948ca85ab
+2009-02-04T11:20:58.558254Z
+1
+root
+has-props
+
+fck_placeholder.html
+file
+
+
+
+
+2009-02-27T13:21:51.820875Z
+de929b6da94c31b917d3b784dfe0c2f8
+2009-02-04T11:20:58.558254Z
+1
+root
+
+fckplugin.js
+file
+
+
+
+
+2009-02-27T13:21:51.891183Z
+1ee7fac56c0805c7b6f07002159be396
+2009-02-04T11:20:58.558254Z
+1
+root
+

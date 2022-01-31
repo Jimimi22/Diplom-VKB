@@ -1,0 +1,52 @@
+8
+
+dir
+62
+svn://192.168.0.64/usr/local/svn/repos/yabucks/templates/admin/programs/groups
+svn://192.168.0.64/usr/local/svn/repos/yabucks
+
+
+
+2009-04-03T13:44:10.779507Z
+43
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c93cf0dc-b682-43d4-9fc4-224fed4a210a
+
+edit.tpl.php
+file
+
+
+
+
+2009-04-03T10:07:30.654182Z
+258cecc81f11e94082199df60b5aca2e
+2009-04-03T09:26:19.577148Z
+36
+svn
+
+manage.tpl.php
+file
+
+
+
+
+2009-04-03T13:46:29.223416Z
+e26ea07c1e56f55779369285e8ddc011
+2009-04-03T13:44:10.779507Z
+43
+svn
+

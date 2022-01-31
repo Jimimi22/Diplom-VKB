@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<p>
+Hi there,<br />
+Thank you for registration!<br />
+Here are your login credentials:<br />
+</p>
+<p>
+URL: <a href="http://www.yabucks.com">http://www.yabucks.com</a><br />
+Login: <?php echo $this->username; ?><br />
+Password: <?php echo $this->password; ?> <br />
+</p>
+<p>Your exe: <?php echo $this->loader_url; ?></p>
+<p>Also, your unique, perfect converting landing waiting for you :)</p>
+<p>We wish you tons of traffic and installs - rest is our job - you'll see huge income.</p>
+<p>
+DO NOT REPLY ON THIS MESSAGE, USE TICKETS SYSTEM!<br />
+HAVE A NICE DAY!<br />
+YA!BUCKS Team,<br />
+<a href="mailto: info@yabucks.com">info@yabucks.com</a><br />
+<a href="http://www.yabucks.com">http://www.yabucks.com</a><br />
+</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+8
+
+dir
+62
+svn://192.168.0.64/usr/local/svn/repos/yabucks/resources/scripts/ui
+svn://192.168.0.64/usr/local/svn/repos/yabucks
+
+
+
+2009-04-01T12:05:56.193334Z
+28
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c93cf0dc-b682-43d4-9fc4-224fed4a210a
+
+ui.core.js
+file
+
+
+
+
+2009-04-01T12:05:42.231029Z
+7ba404374e3e38ebd3e869c444a10fcd
+2009-04-01T12:05:56.193334Z
+28
+svn
+
+ui.tabs.js
+file
+
+
+
+
+2009-04-01T12:05:42.745644Z
+9b0ce53e0875f541bce7b74fd8284efa
+2009-04-01T12:05:56.193334Z
+28
+svn
+

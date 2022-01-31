@@ -1,0 +1,52 @@
+8
+
+dir
+62
+svn://192.168.0.64/usr/local/svn/repos/yabucks/loaders
+svn://192.168.0.64/usr/local/svn/repos/yabucks
+
+
+
+2009-04-08T10:44:52.360943Z
+50
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c93cf0dc-b682-43d4-9fc4-224fed4a210a
+
+new.php
+file
+
+
+
+
+2009-04-08T10:49:36.930462Z
+4d1cbcd3935de19bf7aef03b9fb40cf0
+2009-04-08T10:44:52.360943Z
+50
+svn
+
+update.php
+file
+
+
+
+
+2009-04-08T10:49:36.941204Z
+b320c1e0c15641624e00b03d14d9cdf1
+2009-04-08T10:44:52.360943Z
+50
+svn
+

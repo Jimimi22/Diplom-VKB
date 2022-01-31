@@ -1,0 +1,40 @@
+8
+
+dir
+62
+svn://192.168.0.64/usr/local/svn/repos/yabucks/templates/themes/public
+svn://192.168.0.64/usr/local/svn/repos/yabucks
+
+
+
+2009-04-08T12:00:40.243517Z
+54
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c93cf0dc-b682-43d4-9fc4-224fed4a210a
+
+theme.tpl.php
+file
+
+
+
+
+2009-04-08T11:59:33.956757Z
+809a58e032734cfed7ec8c2e671f62db
+2009-04-08T12:00:40.243517Z
+54
+svn
+

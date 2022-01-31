@@ -1,0 +1,48 @@
+<ul>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=index">Inbox</a></li>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=outbox">Sent</a></li>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=compose" style="color: #fff;">Compose new</a></li>		
+</ul>
+<br /><br />
+<div class="indent1">
+  <div class="box">
+    <div class="left-top-corner">
+      <div class="right-top-corner">
+        <div class="right-bot-corner">
+          <div class="left-bot-corner">
+            <div class="inner">
+				<form action="?cmd=doCompose" method="post" id="compose">
+					<div class="form1">Subject: <b><?php $this->pop('subj-failed');?></b><br />
+						<input type="text" name="subj" value="<?php $this->pop('subj');?>" />
+					</div>	
+					<div class="form2">Message: <b><?php $this->pop('message-failed');?></b><br />
+						<textarea style="height: 200px; width: 400px;" name="message"><?php $this->pop('message'); ?></textarea>
+					</div>
+					<div class="form2">Users: <b><?php $this->pop('to-failed');?></b><br />
+						<select name="to[]" multiple="multiple" size="15" style="width: 300px;">
+						<?php foreach ($this->users as $key => $value) {?>
+						<option value="<?php echo $key?>" 
+						<?php if (@in_array($key, $this->to)) {
+						    echo 'selected';
+						} ?>
+						>
+							<?php echo $value; ?></option>
+						<?php } // end foreach ?>
+						</select>
+					</div>
+					<br />
+					<div class="wrapper">		
+						<a href="#" onclick="document.getElementById('compose').submit(); return false;">
+							<img src="../resources/images/send-button.png"></a>
+					</div>		
+				</form>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

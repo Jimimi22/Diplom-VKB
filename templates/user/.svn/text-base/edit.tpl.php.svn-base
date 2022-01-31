@@ -1,0 +1,71 @@
+<div class="img-box1">
+ <div class="box">
+  <div class="left-top-corner">
+    <div class="right-top-corner">
+      <div class="right-bot-corner">
+        <div class="left-bot-corner">
+          <div class="inner">
+            <form action="?cmd=doSave" method="post" id="signup" >
+            <input type="hidden" name="uid" value="<?php $this->pop('uid');?>">
+            <input type="hidden" name="ref_id" value="<?php $this->pop('ref_id');?>">
+               <div class="form1">Username: <font color="red">*</font>&nbsp;<b><?php $this->pop('username-failed');?></b><br />
+                 <input type="text" name="username" value="<?php $this->pop('username');?>">
+               </div>
+               <?php if($this->update == 'yes') { ?>
+               <div class="form1">Password: <font color="red">*</font>&nbsp;<b><?php $this->pop('password-failed');?></b><br />
+                 <input type="text" name="password" value="<?php $this->pop('password');?>">
+               </div>
+               <div class="form1">Repeat Password: <font color="red">*</font>&nbsp;<b><?php $this->pop('password1-failed');?></b><br />
+                 <input type="text" name="password1" value="<?php $this->pop('password1');?>">
+               </div>
+               <?php } ?>
+               <div class="form1">E-mail address: <font color="red">*</font>&nbsp;<b><?php $this->pop('email-failed');?></b><br />
+                 <input type="text" name="email" value="<?php $this->pop('email');?>">
+               </div>
+               <div class="form1">First name:<br />
+                 <input type="text" name="first_name" value="<?php $this->pop('first_name');?>">
+               </div>
+               <div class="form1">Last name:<br />
+                 <input type="text" name="last_name" value="<?php $this->pop('last_name');?>">
+               </div>
+               <div class="form1">URL:<br />
+                 <input type="text" name="url" value="<?php $this->pop('url');?>">
+               </div>
+               <div class="form1">Type of Instant Mesenger: <br />
+                 <select name="mesenger">
+                 	<option value="0" <?php if($this->mesenger == 0) echo 'selected';?> />--NONE--</option>
+                 	<option value="1" <?php if($this->mesenger == 1) echo 'selected';?> />--ICQ--</option>
+                 	<option value="2" <?php if($this->mesenger == 2) echo 'selected';?> />--MSN--</option>
+                 	<option value="3" <?php if($this->mesenger == 3) echo 'selected';?> />--AOL--</option>
+                 	<option value="4" <?php if($this->mesenger == 4) echo 'selected';?> />--YAHOO!--</option>
+                 </select>
+               </div>
+               <div class="form1">ID of Instant Mesenger:<br />
+                 <input type="text" name="id_mes" value="<?php $this->pop('id_mes');?>">
+               </div>
+               <div class="form1">Payment Method: <font color="red">*</font><br />
+                 <select name="payment_method">
+                 <?php 
+	                 foreach($this->payment_systems as $key=>$value) 
+	                 {
+	                 ?> 
+	                 	<option value="<?php echo $key; ?>" <?php if($this->payment_method == $key) echo 'selected';?> /><?php echo $value['name'] ?></option>
+	                 <?php
+	                 }
+	                 ?>
+                  </select>
+               </div>
+                <div class="form1">Payment Information: <font color="red">*</font>&nbsp;<b><?php $this->pop('pay-info-failed');?></b><br />
+                 <textarea name="payment_info" rows="3" cols="15"><?php $this->pop('payment_info');?></textarea>
+               </div>
+               <br /><br /><br /><br />
+               <div class="wrapper"><a href="#" class="link4" onclick="document.getElementById('signup').submit()"><em><b><?php $this->pop('action');?></b></em></a></div>
+             </form>
+            
+          	</div>
+        	</div>
+ 		  </div>
+ 	   </div>
+    </div>				
+  </div>	
+</div>

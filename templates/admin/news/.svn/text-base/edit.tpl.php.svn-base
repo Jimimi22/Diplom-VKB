@@ -1,0 +1,28 @@
+<div class="indent1">
+  <div class="box">
+    <div class="left-top-corner">
+      <div class="right-top-corner">
+        <div class="right-bot-corner">
+          <div class="left-bot-corner">
+            <div class="inner">
+				<form action="?cmd=doEdit" method="post" id="edit">
+					<input type="hidden" name="id" value="<?php $this->pop('id'); ?>">
+					<div class="form1">Caption: <b><?php $this->pop('caption-failed');?></b><br />
+						<input type="text" name="caption" value="<?php $this->pop('caption');?>" />
+					</div>	
+					<div class="form2">Body: <b><?php $this->pop('body-failed');?></b><br />
+						<textarea style="height: 400px; width: 100%;" name="body"><?php $this->pop('body'); ?></textarea>
+					</div>
+					<br />
+					<div class="wrapper">		
+						<a href="#" class="link4" onclick="document.getElementById('edit').submit(); return false;"><em><b>Save changes</b></em></a>
+						<a href="?cmd=index" class="link4" style="margin-left: 20px;"><em><b>Cancel</b></em></a>
+					</div>		
+				</form>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

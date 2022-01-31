@@ -1,0 +1,52 @@
+8
+
+dir
+62
+svn://192.168.0.64/usr/local/svn/repos/yabucks/templates/admin/payments
+svn://192.168.0.64/usr/local/svn/repos/yabucks
+
+
+
+2009-04-08T15:15:11.376218Z
+57
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c93cf0dc-b682-43d4-9fc4-224fed4a210a
+
+paid.tpl.php
+file
+63
+
+
+
+2009-04-10T09:09:51.719622Z
+42368705730563a4edfbe240f6833916
+2009-04-10T09:18:17.859449Z
+63
+svn
+
+notpaid.tpl.php
+file
+63
+
+
+
+2009-04-10T09:15:10.740219Z
+3c929fb77c9c475572a4c66aebf79711
+2009-04-10T09:18:17.859449Z
+63
+svn
+

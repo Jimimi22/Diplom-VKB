@@ -1,0 +1,23 @@
+<div class="line-hor"></div>
+<div class="title"><img src="../resources/images/what-we-can.png" alt="" /></div>
+<div class="wrapper">
+  <div class="col-1">
+    <ul class="list1">
+      <li><span>70% revshare</span></li>
+      <li><span>Software lifetime payout</span></li>
+      <li><span>Monetizing all countries</span></li>
+      <li><span>Bi weekly payments</span></li>
+      <li><span>Undetecable software</span></li>
+    </ul>
+  </div>
+  <div class="col-2">
+    <ul class="list1">
+      <li><span>Support via tickets</span></li>
+      <li><span>FREE Tools for our partners</span></li>
+      <li><span>Different landings</span></li>
+      <li><span>5% Referral commisions</span></li>
+      <li><span>AND MUCH MORE!!!</span></li>
+    </ul>
+  </div>
+</div>
+<p><a href="signup.php" class="link">Register in best pay-per-install program with revshare ></a></p>

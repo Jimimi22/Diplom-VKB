@@ -1,0 +1,28 @@
+<div class="box1">
+  <div class="border-top">
+    <div class="border-right">
+      <div class="border-bot">
+        <div class="border-left">
+          <div class="left-top-corner">
+            <div class="right-top-corner">
+              <div class="right-bot-corner">
+                <div class="left-bot-corner">
+                  <div class="inner">
+                    <div class="title"><img src="../resources/images/feedback.png" alt="" /></div>
+                    <form action="?cmd=doFeedback" method="post" id="feedback">
+                      <div class="form">
+                        <label>Do you have a suggestion? Or critigue? Send it anonumously to us!</label>
+                        <input type="text" name="text" />
+                        <a href="#" onclick="document.getElementById('feedback').submit(); return false;"><img src="../resources/images/send-button.png" alt="" /></a></div>
+                        <div id="text-failed"><?php $this->pop('text-failed'); ?></div>                        
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

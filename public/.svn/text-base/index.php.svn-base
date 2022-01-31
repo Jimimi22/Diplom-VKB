@@ -1,0 +1,59 @@
+<?php
+//---------------------- required -------------
+require_once '../controller/boot.php';
+require_once '../controller/Public.php';
+
+//---------------------- libs -----------------
+require_once '../lib/Mail/class.phpmailer.php';
+//---------------------- models ---------------
+
+class Controller extends PublicController {
+    public function __construct(Config $config) {
+        parent::__construct($config);
+    }
+    
+    public function init(Config $config) {
+        parent::init($config);
+    }    
+    
+    public function IndexTheme($title) {
+        $this->getTemplateAdapter()->put('_MENUITEM', 'home');
+        return $this->getTemplateAdapter()->render('public/index.tpl.php');
+    }
+    
+    public function indexCmd() {
+        return $this->IndexTheme('Home');
+    }
+    
+    public function doFeedbackCmd() {
+        $values = array(
+            'text' => Filter::getStrval($_REQUEST, 'text'));
+        if ($this->ValidateFeedbackForm($values)) {
+            $PHPMailer = new PHPMailer();
+            $PHPMailer->ContentType = 'text/html';
+            $PHPMailer->CharSet = 'utf-8';
+            $PHPMailer->Subject = 'Suggestions from site '.$_SERVER['HTTP_HOST'];
+            $PHPMailer->Body    = $values['text'];
+            
+            $PHPMailer->AddAddress($this->getConfig()->email);
+            $PHPMailer->Send();
+            
+            $this->addMessage('Your opinion succesfully sended', self::$NOTIF);
+            $this->redirect('?cmd=index');
+        }
+        return $this->IndexTheme('Home');
+    }
+    
+    public function ValidateFeedbackForm(array $values) {
+        $valid = true;
+        if (empty($values['text'])) {
+            $this->getTemplateAdapter()->put('text-failed', 'required field');
+            $valid = false;
+        }
+        return $valid;
+    }
+}
+
+//---------------------- required -------------
+require_once '../controller/dispatcher/default.php';
+?>

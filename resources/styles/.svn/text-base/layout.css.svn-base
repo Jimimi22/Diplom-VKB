@@ -1,0 +1,61 @@
+#main {width:980px; margin:0 auto;}
+
+#header {height:430px;}
+#header, #content, #footer { font-size:0.75em;}
+
+.col-1, .col-2, .col-3 { float:left;}
+
+/*======= index.html =======*/
+#page1 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page1 #content .col-1 .col-1 { width:252px; margin:0 9px 0 0;}
+#page1 #content .col-1 .col-2 { width:272px; padding:0;}
+#page1 #content .col-2 { width:354px;}
+
+/*======= index-1.html =======*/
+#page2 #content .col-1 {width: 890px; margin:0 25px 0 0;}
+/*
+#page2 #content .col-1 .col-1 { width:252px; margin:0 9px 0 0;}
+#page2 #content .col-1 .col-2 { width:272px; padding:0;}
+#page2 #content .col-2 { width:354px;}
+*/
+
+/*======= index-2.html =======*/
+#page3 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page3 #content .col-1 .col-1 { width:252px; margin:0 9px 0 0;}
+#page3 #content .col-1 .col-2 { width:272px; padding:0;}
+#page3 #content .col-2 { width:354px;}
+
+/*======= index-3.html =======*/
+#page4 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page4 #content .col-1 .row-1 .col-1 { width:250px; margin:0 22px 0 0;}
+#page4 #content .col-1 .row-1 .col-2 { width:248px; padding:0;}
+#page4 #content .col-1 .row-2 .col-1 { width:252px; margin:0 9px 0 0;}
+#page4 #content .col-1 .row-2 .col-2 { width:272px; padding:0;}
+#page4 #content .col-2 { width:354px;}
+
+/*======= index-4.html =======*/
+#page5 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page5 #content .col-1 .col-1 { width:140px; margin:0;}
+#page5 #content .col-1 .col-2 { width:387px; padding:0;}
+#page5 #content .col-2 { width:354px;}
+
+/*======= index-5.html =======*/
+#page6 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page6 #content .col-1 .col-1 { width:252px; margin:0 9px 0 0;}
+#page6 #content .col-1 .col-2 { width:272px; padding:0;}
+#page6 #content .col-2 { width:354px;}
+
+/*======= index-6.html =======*/
+#page7 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page7 #content .col-1 .col-1 { width:249px; margin:0 36px 0 0;}
+#page7 #content .col-1 .col-2 { width:249px; padding:0;}
+#page7 #content .col-2 { width:354px;}
+
+/*======= index-7.html =======*/
+#page8 #content .col-1 {width:536px; margin:0 25px 0 0;}
+#page8 #content .col-2 { width:354px;}
+
+/*=========================*/
+
+
+#footer {height:74px; background:url(/resources/images/footer-bg.gif) no-repeat left top;}

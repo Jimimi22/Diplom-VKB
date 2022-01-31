@@ -1,0 +1,49 @@
+8
+
+dir
+28
+svn://192.168.0.64/usr/local/svn/repos/spfish/resources/scripts/fckeditor/editor/plugins
+svn://192.168.0.64/usr/local/svn/repos/spfish
+
+
+
+2009-02-17T11:32:44.715760Z
+20
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e2fd7e2b-b991-41b7-8b37-9387fa846916
+
+placeholder
+dir
+
+autogrow
+dir
+
+dragresizetable
+dir
+
+tablecommands
+dir
+
+catalog
+dir
+
+simplecommands
+dir
+
+bbcode
+dir
+

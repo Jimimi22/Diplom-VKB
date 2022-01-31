@@ -1,0 +1,26 @@
+<ul>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=index" style="color: #fff;">Inbox</a></li>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=outbox">Sent</a></li>
+	<li style="float: left; margin-right: 10px;">
+		<a href="?cmd=compose&id=<?php echo $this->id; ?>">Reply</a></li>		
+	<li style="float: left; margin-right: 10px;">		
+		<a href="?cmd=doRemoveInbox&id=<?php echo $this->id; ?>"
+		onclick="javascript: return confirm('Remove message?');">Remove</a></td></li>
+</ul>
+<br /><br />
+<b><span style="color:#504e46;">From:</span></b>
+<?php echo $this->first_name; ?>&nbsp;<?php echo $this->last_name; ?>
+<br /><br />
+<b><span style="color:#504e46;">Subject:</span></b>
+<?php echo $this->subj; ?>
+<br /><br />
+<b><span style="color:#504e46;">Posted:</span></b>
+<?php echo $this->posted; ?>
+<br /><br />
+<b><span style="color:#504e46;">Message:</span></b>
+<br /><br />
+<p>
+<?php echo nl2br($this->message); ?>
+</p>

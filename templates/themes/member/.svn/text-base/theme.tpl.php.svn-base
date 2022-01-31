@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>YA!BUCKS Pay-per-install program with maximum revenue!</title>
+<link href="../resources/styles/style.css" rel="stylesheet" type="text/css" />
+<link href="../resources/styles/layout.css" rel="stylesheet" type="text/css" />
+
+<script src="../resources/scripts/jquery.js" type="text/javascript"></script>
+<script src="../resources/scripts/jquery.pngfix.js" type="text/javascript"></script>
+<script src="../resources/scripts/jquery.timers.js" type="text/javascript"></script>
+<script src="../resources/scripts/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="../resources/scripts/jquery.hotkeys.js" type="text/javascript"></script>
+<script src="../resources/scripts/rollover.js" type="text/javascript"></script>
+
+<script src="../resources/scripts/shoutbox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	$(document).pngFix(); 	
+});
+//-->
+</script>
+</head>
+<body id="page1" onload="MM_preloadImages('/resources/images/m5a.png','/resources/images/m6a.png','/resources/images/m7a.png','/resources/images/m8a.png','/resources/images/m9a.png','/resources/images/m10a.png','/resources/images/m11a.png')">
+
+<div id="main">
+  <!-- header -->
+  <div id="header">
+    <div style="position: absolute; "><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,24"
+           width="980" height="430">
+      <param name="movie" value="../resources/header.swf" />
+      <param name="quality" value="high" />
+      <param name="menu" value="false" />
+      <param name="wmode" value="transparent" />
+      <!--[if !IE]> <-->
+      <object data="../resources/header.swf"
+           width="980" height="430" type="application/x-shockwave-flash">
+        <param name="quality" value="high" />
+        <param name="menu" value="false" />
+        <param name="pluginurl" value="http://www.macromedia.com/go/getflashplayer" />
+        <param name="wmode" value="transparent" />
+        FAIL (the browser should render some flash content, not this).
+      </object>
+      <!--> <![endif]-->
+    </object></div>
+    
+    <div style="position: absolute; padding-top:12px; padding-left:20px; z-index: 1000;">
+	    <ul class="list">
+          <li>
+          	<?php echo date('l, m. F Y, H:i \U\T\C O');?></li>
+		  <li>
+          	Today earnings: $<a href="stats.php"><?php echo $this->_TODAY_MONEY['amount_revshare']?$this->_TODAY_MONEY['amount_revshare']:0; ?></a></li>
+		  <li>
+          	<a href="support.php">
+	          	<?php echo $this->_INBOX_MESSAGES?$this->_INBOX_MESSAGES:0; ?></a> messages</li>          	
+        </ul>        
+    </div>
+    <div style="position: absolute; padding-top:12px; margin-left:850px; z-index: 1000; width: 150px;">
+	    <ul class="list">         
+		  <li>
+          	Ballance: $<a href="stats.php"><?php echo $this->_PPBALLANCE?$this->_PPBALLANCE:0; ?></a></li>
+        </ul>        
+    </div>    
+    <div style="position: absolute; padding-top:45px; padding-left:30px;">
+    	<img src="../resources/images/company-logo.png">
+    </div>
+    <div style="position: absolute; padding-top:212px; padding-left:30px;" class="row-3">
+       <ul class="site-nav">
+            <li><a href="index.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m5','','/resources/images/m5a.png',1)">
+            	<img src="/resources/images/m5<?php if ($this->_MENUITEM == 'home') {echo 'a'; }?>.png" alt="" id="m5" /></a></li>
+            <li><a href="stats.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m6','','/resources/images/m6a.png',1)">
+            	<img src="/resources/images/m6<?php if ($this->_MENUITEM == 'stats') {echo 'a'; }?>.png" alt="" id="m6" /></a></li>            	
+            <li><a href="promo.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m7','','/resources/images/m7a.png',1)">
+            	<img src="/resources/images/m7<?php if ($this->_MENUITEM == 'promo') {echo 'a'; }?>.png" alt="" id="m7" /></a></li>
+            <li><a href="payments.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m8','','/resources/images/m8a.png',1)">
+            	<img src="/resources/images/m8<?php if ($this->_MENUITEM == 'payments') {echo 'a'; }?>.png" alt="" id="m8" /></a></li>
+            <li><a href="account.php?cmd=index" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m9','','/resources/images/m9a.png',1)">
+            	<img src="/resources/images/m9<?php if ($this->_MENUITEM == 'account') {echo 'a'; }?>.png" alt="" id="m9" /></a></li>
+            <li><a href="support.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m10','','/resources/images/m10a.png',1)">
+            	<img src="/resources/images/m10<?php if ($this->_MENUITEM == 'support') {echo 'a'; }?>.png" alt="" id="m10" /></a></li>
+            <li><a href="?cmd=doLogout" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('m11','','/resources/images/m11a.png',1)">
+            	<img src="/resources/images/m11<?php if ($this->_MENUITEM == 'logout') {echo 'a'; }?>.png" alt="" id="m11" /></a></li>            	
+        </ul>
+     </div>
+   
+  </div>
+  <!-- content -->
+  <div id="content">
+    <div class="container">
+      <div class="col-1">
+        <div class="indent">
+          <div class="title">
+          <img src="../resources/images/<?
+              switch ($this->_MENUITEM) {
+                case 'home':
+                    echo 'news.png';
+                    break;
+                case 'promo':
+                    echo 'promo.png';
+                    break;  
+                case 'stats':
+                    echo 'stats.png';
+                    break;                                        
+                case 'support':
+                    echo 'support.png';
+                    break;                    
+                case 'account':
+                    echo 'update_account.png';
+                    break;                        
+                case 'payments':
+                    echo 'payments.png';
+                    break;                            
+              }
+          ?>" />
+          </div>
+          <div class="img-box1">
+    		<?php 
+    		    $this->call('messages', true);
+    		    $this->call('messages', false);    		    
+    		    echo $this->_CONTENT; ?>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="indent1">
+          <div class="box">
+            <div class="left-top-corner">
+              <div class="right-top-corner">
+                <div class="right-bot-corner">
+                  <div class="left-bot-corner">
+                    <div class="inner">
+                    	<!-- 
+	                    <div class="title"><img src="../resources/images/shoutbox.png"></div>
+                    	<div id="yshout"></div>
+                    	 -->
+                    	<?php $this->inc('member/shoutbox.tpl.php');?>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div id="footer">
+    <p><?php echo strtoupper($_SERVER['HTTP_HOST']); ?> &copy; <?php echo date('Y');?></p>
+  </div>
+</div>
+</body>
+</html>
